@@ -72,7 +72,6 @@ task replaceHardCodedVersionNames() {
 
 compileJava.dependsOn replaceHardCodedVersionNames
 
-// This is necessary to avoid eclipse problems; eclipse does not allow the same project to be imported twice as dependency
 eclipse {
 	classpath {
 		containsTestFixtures = true
